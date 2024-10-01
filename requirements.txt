@@ -1,5 +1,6 @@
 pandas
 requests
 psycopg2-binary
+SQLAlchemy
 tenacity
-apscheduler
+pytest
