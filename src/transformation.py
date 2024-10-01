@@ -14,7 +14,7 @@ def enrich_flight_data(flights_df):
     # Filter out rows where the plane is on the ground
     flights_df = flights_df[flights_df['on_ground'] == False]
     # Add a new column 'is_high_altitude' if altitude > 10,000 meters
-    flights_df['is_high_altitude'] = flights_df['baro_altitude'] > 10000
+    flights_df.loc[:, 'is_high_altitude'] = flights_df['baro_altitude'] > 10000
     return flights_df
 
 
