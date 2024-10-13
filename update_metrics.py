@@ -37,13 +37,6 @@ class AircraftMetrics(Base):
 Base.metadata.create_all(engine)
 
 def insert_new_aircraft_if_not_exists(metrics_table, session, aircraft_id, origin_country, current_latitude, current_longitude):
-    # Check if the aircraft already exists in the metrics_table DataFrame
-    #aircraft_exists = metrics_table[metrics_table['icao24'] == aircraft_id]
-    
-    #if aircraft_exists.empty:  # If aircraft_id doesn't exist in the DataFrame
-        # Create a new row with the provided data
-
-        
         update_query = text("""
             UPDATE aircraft_metrics
             SET previous_latitude = :current_lat, 
@@ -64,9 +57,6 @@ def insert_new_aircraft_if_not_exists(metrics_table, session, aircraft_id, origi
 
         session.execute(update_query, params)
 
-        #print(f"Inserted new aircraft {aircraft_id} into the database.")
-    #else:
-     #   print(f"Aircraft {aircraft_id} already exists in the DataFrame.")
 
 
 
@@ -87,8 +77,7 @@ def update_aircraft_metrics(session):
         for index, row in current_data.iterrows():
             new_entry = AircraftMetrics(
                 icao24=row['icao24'],
-                #previous_latitude=row['current_latitude']if not isinstance(row['current_latitude'], pd.Series) else row['current_latitude'].iloc[0],
-                #previous_longitude=row['current_longitude']if not isinstance(row['current_longitude'], pd.Series) else row['current_longitude'].iloc[0],
+                
                 previous_latitude=row['current_latitude'],
                 previous_longitude=row['current_longitude'],
                 cumulative_distance=0.0,
@@ -107,14 +96,12 @@ def update_aircraft_metrics(session):
         current_lon=float(row['current_longitude'])
         origin_country=current_data['origin_country'].iloc[0]
 
-        #metrics_row = metrics_data.loc[metrics_data['icao24']==aircraft_id] if aircraft_id in metrics_data.index else pd.Series()
-        #metrics_row = metrics_data.loc[aircraft_id] if aircraft_id in metrics_data.index else pd.Series()
+
         metrics_row = metrics_data.loc[metrics_data['icao24']==aircraft_id]
         #print(metrics_row)
          # Insert new aircraft if not already in the metrics table
          
-         # Create a MetaData instance
-        metadata = MetaData()
+
         # Reflect the existing table
         aircraft_exists = metrics_data[metrics_data['icao24'] == aircraft_id]
     
@@ -123,7 +110,7 @@ def update_aircraft_metrics(session):
         elif not metrics_row.empty: 
             metrics_row = metrics_row.iloc[0]
 
-            #if metrics_row['previous_latitude'] is not None and metrics_row['previous_longitude'] is not None and row['on_ground']==False:
+
             if not pd.isna(row['current_latitude']) and not pd.isna(row['current_longitude']) and \
                  not pd.isna(metrics_row['previous_latitude']) and not pd.isna(metrics_row['previous_longitude']):
                 previous_lat=float(metrics_row['previous_latitude'])
@@ -138,8 +125,6 @@ def update_aircraft_metrics(session):
                 new_cumulative_distance=float_value+distance
 
 
-                #print("ditance:=====",new_cumulative_distance)
-                #print("index",index)
                 
             elif row['on_ground']:
                 new_cumulative_distance=float(metrics_row['cumulative_distance'])
