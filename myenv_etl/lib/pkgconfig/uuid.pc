@@ -1,0 +1,11 @@
+prefix=/home/n_amdouni/ETL/Airlife_2025/myenv_etl
+exec_prefix=/home/n_amdouni/ETL/Airlife_2025/myenv_etl
+libdir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/lib
+includedir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

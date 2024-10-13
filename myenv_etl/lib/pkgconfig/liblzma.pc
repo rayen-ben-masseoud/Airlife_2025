@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/n_amdouni/ETL/Airlife_2025/myenv_etl
+exec_prefix=/home/n_amdouni/ETL/Airlife_2025/myenv_etl
+libdir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/lib
+includedir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

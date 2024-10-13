@@ -1,0 +1,829 @@
+{
+  "build": "py310h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [
+    "urllib >=1.24.2",
+    "requests >=2.16.2"
+  ],
+  "depends": [
+    "geographiclib >=1.52,<3",
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "/home/n_amdouni/anaconda3/pkgs/geopy-2.4.1-py310h06a4308_0",
+  "files": [
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/AUTHORS",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/LICENSE",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/METADATA",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/RECORD",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/WHEEL",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/geopy-2.4.1.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/geopy/__init__.py",
+    "lib/python3.10/site-packages/geopy/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/adapters.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/compat.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/distance.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/exc.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/format.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/location.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/point.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/timezone.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/units.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/__pycache__/util.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/adapters.py",
+    "lib/python3.10/site-packages/geopy/compat.py",
+    "lib/python3.10/site-packages/geopy/distance.py",
+    "lib/python3.10/site-packages/geopy/exc.py",
+    "lib/python3.10/site-packages/geopy/extra/__init__.py",
+    "lib/python3.10/site-packages/geopy/extra/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/extra/__pycache__/rate_limiter.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/extra/rate_limiter.py",
+    "lib/python3.10/site-packages/geopy/format.py",
+    "lib/python3.10/site-packages/geopy/geocoders/__init__.py",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/arcgis.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/azure.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/baidu.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/banfrance.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/base.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/bing.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/databc.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geocodeearth.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geocodio.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geokeo.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geolake.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geonames.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/google.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/googlev3.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/here.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/ignfrance.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/mapbox.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/mapquest.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/maptiler.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/nominatim.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/opencage.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/openmapquest.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/osm.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/pelias.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/photon.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/pickpoint.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/smartystreets.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/tomtom.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/what3words.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/woosmap.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/__pycache__/yandex.cpython-310.pyc",
+    "lib/python3.10/site-packages/geopy/geocoders/arcgis.py",
+    "lib/python3.10/site-packages/geopy/geocoders/azure.py",
+    "lib/python3.10/site-packages/geopy/geocoders/baidu.py",
+    "lib/python3.10/site-packages/geopy/geocoders/banfrance.py",
+    "lib/python3.10/site-packages/geopy/geocoders/base.py",
+    "lib/python3.10/site-packages/geopy/geocoders/bing.py",
+    "lib/python3.10/site-packages/geopy/geocoders/databc.py",
+    "lib/python3.10/site-packages/geopy/geocoders/geocodeearth.py",
+    "lib/python3.10/site-packages/geopy/geocoders/geocodio.py",
+    "lib/python3.10/site-packages/geopy/geocoders/geokeo.py",
+    "lib/python3.10/site-packages/geopy/geocoders/geolake.py",
+    "lib/python3.10/site-packages/geopy/geocoders/geonames.py",
+    "lib/python3.10/site-packages/geopy/geocoders/google.py",
+    "lib/python3.10/site-packages/geopy/geocoders/googlev3.py",
+    "lib/python3.10/site-packages/geopy/geocoders/here.py",
+    "lib/python3.10/site-packages/geopy/geocoders/ignfrance.py",
+    "lib/python3.10/site-packages/geopy/geocoders/mapbox.py",
+    "lib/python3.10/site-packages/geopy/geocoders/mapquest.py",
+    "lib/python3.10/site-packages/geopy/geocoders/maptiler.py",
+    "lib/python3.10/site-packages/geopy/geocoders/nominatim.py",
+    "lib/python3.10/site-packages/geopy/geocoders/opencage.py",
+    "lib/python3.10/site-packages/geopy/geocoders/openmapquest.py",
+    "lib/python3.10/site-packages/geopy/geocoders/osm.py",
+    "lib/python3.10/site-packages/geopy/geocoders/pelias.py",
+    "lib/python3.10/site-packages/geopy/geocoders/photon.py",
+    "lib/python3.10/site-packages/geopy/geocoders/pickpoint.py",
+    "lib/python3.10/site-packages/geopy/geocoders/smartystreets.py",
+    "lib/python3.10/site-packages/geopy/geocoders/tomtom.py",
+    "lib/python3.10/site-packages/geopy/geocoders/what3words.py",
+    "lib/python3.10/site-packages/geopy/geocoders/woosmap.py",
+    "lib/python3.10/site-packages/geopy/geocoders/yandex.py",
+    "lib/python3.10/site-packages/geopy/location.py",
+    "lib/python3.10/site-packages/geopy/point.py",
+    "lib/python3.10/site-packages/geopy/timezone.py",
+    "lib/python3.10/site-packages/geopy/units.py",
+    "lib/python3.10/site-packages/geopy/util.py"
+  ],
+  "fn": "geopy-2.4.1-py310h06a4308_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/n_amdouni/anaconda3/pkgs/geopy-2.4.1-py310h06a4308_0",
+    "type": 1
+  },
+  "md5": "25913b1d92525fae87c8632722de69f0",
+  "name": "geopy",
+  "package_tarball_full_path": "/home/n_amdouni/anaconda3/pkgs/geopy-2.4.1-py310h06a4308_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/AUTHORS",
+        "path_type": "hardlink",
+        "sha256": "f7efcfb3c2feaf1b4ff006aff9db3c0149df9c73754690863ae4c9c31b8420cd",
+        "sha256_in_prefix": "f7efcfb3c2feaf1b4ff006aff9db3c0149df9c73754690863ae4c9c31b8420cd",
+        "size_in_bytes": 4927
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "f09cbf1aec22dfc3d457594b619d0484a12498e9481bc126fb16dff6bf5aec16",
+        "sha256_in_prefix": "f09cbf1aec22dfc3d457594b619d0484a12498e9481bc126fb16dff6bf5aec16",
+        "size_in_bytes": 1076
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3b069cb3f89a104524ee579063b93236ab3c6967f4a8f9b9644b6ec57b8210fa",
+        "sha256_in_prefix": "3b069cb3f89a104524ee579063b93236ab3c6967f4a8f9b9644b6ec57b8210fa",
+        "size_in_bytes": 6800
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "9bcd90565c800369ffe9e600659a8c96b9252157b37d86476b7c05f330cb867e",
+        "sha256_in_prefix": "9bcd90565c800369ffe9e600659a8c96b9252157b37d86476b7c05f330cb867e",
+        "size_in_bytes": 6770
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+        "sha256_in_prefix": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "f79835230687c3a899c9aa56af022efdc5f31ebcd1f78423f6c5b4def83360ed",
+        "sha256_in_prefix": "f79835230687c3a899c9aa56af022efdc5f31ebcd1f78423f6c5b4def83360ed",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy-2.4.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "afeec7449e28ad689f595b4e29d2ec2c063e55fafbf028840f253b7e76764486",
+        "sha256_in_prefix": "afeec7449e28ad689f595b4e29d2ec2c063e55fafbf028840f253b7e76764486",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a38b8e17d003bc1d1adffca2f1b74e7f99eb0a4920e6bb0ae6ffb804dae3d302",
+        "sha256_in_prefix": "a38b8e17d003bc1d1adffca2f1b74e7f99eb0a4920e6bb0ae6ffb804dae3d302",
+        "size_in_bytes": 920
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "068febb56e6ed4a7ba92e832017b3df190e69bcaa7001f43ffbdd7e7953a42ec",
+        "sha256_in_prefix": "068febb56e6ed4a7ba92e832017b3df190e69bcaa7001f43ffbdd7e7953a42ec",
+        "size_in_bytes": 834
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/adapters.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b4061b654f457281d7256731f7fc5d7900e617df6744f2f52698f198024c489",
+        "sha256_in_prefix": "5b4061b654f457281d7256731f7fc5d7900e617df6744f2f52698f198024c489",
+        "size_in_bytes": 19367
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/compat.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c9c25054346d9e3fb9f701dc43cbecf749947ca287caa25f246a0ad21c29b08d",
+        "sha256_in_prefix": "c9c25054346d9e3fb9f701dc43cbecf749947ca287caa25f246a0ad21c29b08d",
+        "size_in_bytes": 263
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/distance.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "543aa024eecf2e3dcae9ca850863acadd0c88efaaa1624595386ad7f7b4673e3",
+        "sha256_in_prefix": "543aa024eecf2e3dcae9ca850863acadd0c88efaaa1624595386ad7f7b4673e3",
+        "size_in_bytes": 19307
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/exc.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d3d34f48ed7e20826702c8ad8a364688cd90d129ee17a12e3ec1d294db601a1d",
+        "sha256_in_prefix": "d3d34f48ed7e20826702c8ad8a364688cd90d129ee17a12e3ec1d294db601a1d",
+        "size_in_bytes": 4212
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/format.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "be11b6759221e1d7ba142441796772687a76ec30abceccdd1821b298ee639847",
+        "sha256_in_prefix": "be11b6759221e1d7ba142441796772687a76ec30abceccdd1821b298ee639847",
+        "size_in_bytes": 2931
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/location.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d8fef85a9812076e1d4409a7f1b2b6bc85a69326f26ebc4555b4908c3d3e5a16",
+        "sha256_in_prefix": "d8fef85a9812076e1d4409a7f1b2b6bc85a69326f26ebc4555b4908c3d3e5a16",
+        "size_in_bytes": 4389
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/point.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "8882f0dd3b269a992260662ebd43f816c8633ebc2db371ece76d16695d98d2b9",
+        "sha256_in_prefix": "8882f0dd3b269a992260662ebd43f816c8633ebc2db371ece76d16695d98d2b9",
+        "size_in_bytes": 15268
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/timezone.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "dad1ba7ef8a95e095ad9670f2034fa9a90a3605b0742cb32488da1cecd7e6ee0",
+        "sha256_in_prefix": "dad1ba7ef8a95e095ad9670f2034fa9a90a3605b0742cb32488da1cecd7e6ee0",
+        "size_in_bytes": 3099
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/units.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1b7afc5e694b12666315e20968ccb19286fb0212f339288a223451701d21013d",
+        "sha256_in_prefix": "1b7afc5e694b12666315e20968ccb19286fb0212f339288a223451701d21013d",
+        "size_in_bytes": 2793
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/__pycache__/util.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "fa7a696a8405f6945ac699ac3226ac8882fed7d29a224333d37e3f3f4dcf5245",
+        "sha256_in_prefix": "fa7a696a8405f6945ac699ac3226ac8882fed7d29a224333d37e3f3f4dcf5245",
+        "size_in_bytes": 1037
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/adapters.py",
+        "path_type": "hardlink",
+        "sha256": "594fa73d8f5f252457cc106b6a5599819aed069d9eda0f00cbf1cbab138c0c1c",
+        "sha256_in_prefix": "594fa73d8f5f252457cc106b6a5599819aed069d9eda0f00cbf1cbab138c0c1c",
+        "size_in_bytes": 24131
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/compat.py",
+        "path_type": "hardlink",
+        "sha256": "d1fd791192aa7f36dc9e440baf1e75499e675cc3e2205dfa67329a34d5289af8",
+        "sha256_in_prefix": "d1fd791192aa7f36dc9e440baf1e75499e675cc3e2205dfa67329a34d5289af8",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/distance.py",
+        "path_type": "hardlink",
+        "sha256": "774b385e7c135d1b7f050325e385fa8909c24ba1b8856ae2fdd8805de48cd8c6",
+        "sha256_in_prefix": "774b385e7c135d1b7f050325e385fa8909c24ba1b8856ae2fdd8805de48cd8c6",
+        "size_in_bytes": 19705
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/exc.py",
+        "path_type": "hardlink",
+        "sha256": "416d1a35ce493a8229c4d2513087df55cfaaa7c6f713fa8620134e8f2464f5a1",
+        "sha256_in_prefix": "416d1a35ce493a8229c4d2513087df55cfaaa7c6f713fa8620134e8f2464f5a1",
+        "size_in_bytes": 3104
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/extra/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c32a5417801b1200acbfeb18e40065362f307f70c0972f39195558cb2bd01972",
+        "sha256_in_prefix": "c32a5417801b1200acbfeb18e40065362f307f70c0972f39195558cb2bd01972",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/extra/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ed7ba907663cdfaf686e30ddb29f83b28ca79d5e5e9be5dc174dc1a89005e4dd",
+        "sha256_in_prefix": "ed7ba907663cdfaf686e30ddb29f83b28ca79d5e5e9be5dc174dc1a89005e4dd",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/extra/__pycache__/rate_limiter.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "dbb06cde5e172b710a53b1354c2554d5f76f4646b3b1bc2a2fd92a6f66896d96",
+        "sha256_in_prefix": "dbb06cde5e172b710a53b1354c2554d5f76f4646b3b1bc2a2fd92a6f66896d96",
+        "size_in_bytes": 10986
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/extra/rate_limiter.py",
+        "path_type": "hardlink",
+        "sha256": "e86db5d3192c88db3dc606e6e8c9f5eeb91fe36803223ceb89d681aab4696e50",
+        "sha256_in_prefix": "e86db5d3192c88db3dc606e6e8c9f5eeb91fe36803223ceb89d681aab4696e50",
+        "size_in_bytes": 14731
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/format.py",
+        "path_type": "hardlink",
+        "sha256": "99f25655e97c75c28d6dd4f1d113f2dd828caef434b152ed46b531988091d207",
+        "sha256_in_prefix": "99f25655e97c75c28d6dd4f1d113f2dd828caef434b152ed46b531988091d207",
+        "size_in_bytes": 2904
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a0043bec883869ed170fbbbda325dfcd977863cd12b288785928dabd957cdad3",
+        "sha256_in_prefix": "a0043bec883869ed170fbbbda325dfcd977863cd12b288785928dabd957cdad3",
+        "size_in_bytes": 11625
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "25093051e01679811776682a7003d27610fbe1fb003c4f64c538e62a5dea14e1",
+        "sha256_in_prefix": "25093051e01679811776682a7003d27610fbe1fb003c4f64c538e62a5dea14e1",
+        "size_in_bytes": 11031
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/arcgis.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7e84f5ed4b322a927f6e35d6f3c7f019792a76034b77438b16b54a471b014d13",
+        "sha256_in_prefix": "7e84f5ed4b322a927f6e35d6f3c7f019792a76034b77438b16b54a471b014d13",
+        "size_in_bytes": 10167
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/azure.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "de5da817d5c8354c11a94ea8bec18e8d93eef6c11d8c04d526dcab81b44b2d3e",
+        "sha256_in_prefix": "de5da817d5c8354c11a94ea8bec18e8d93eef6c11d8c04d526dcab81b44b2d3e",
+        "size_in_bytes": 2326
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/baidu.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "36525fbb53f1402a5fa349d101a37074f5e128c7c0ad30e5be422412cf6ace0d",
+        "sha256_in_prefix": "36525fbb53f1402a5fa349d101a37074f5e128c7c0ad30e5be422412cf6ace0d",
+        "size_in_bytes": 8208
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/banfrance.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "90441a050ae0b46efeae09b321c9690d37b2852acf74d173433a8d04bcf61f80",
+        "sha256_in_prefix": "90441a050ae0b46efeae09b321c9690d37b2852acf74d173433a8d04bcf61f80",
+        "size_in_bytes": 5550
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/base.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "4988b8e10fc42201607594e1e4f3aec3fc3ad6ce2b46e6bcd5f15f49ca05fcdf",
+        "sha256_in_prefix": "4988b8e10fc42201607594e1e4f3aec3fc3ad6ce2b46e6bcd5f15f49ca05fcdf",
+        "size_in_bytes": 13928
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/bing.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1a6a87ce0a41ad5063541c24483e0232f5bf93ebfd5937e24510bb90723ed676",
+        "sha256_in_prefix": "1a6a87ce0a41ad5063541c24483e0232f5bf93ebfd5937e24510bb90723ed676",
+        "size_in_bytes": 8037
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/databc.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ccfdc40efd9768dc77e4351de2d597e7de35bf20a42e99b645fe9bfa21e99bb8",
+        "sha256_in_prefix": "ccfdc40efd9768dc77e4351de2d597e7de35bf20a42e99b645fe9bfa21e99bb8",
+        "size_in_bytes": 4591
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geocodeearth.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "377203bd3dc10243768784d99a5185ab9f94a821617edc52949d89f7a402f100",
+        "sha256_in_prefix": "377203bd3dc10243768784d99a5185ab9f94a821617edc52949d89f7a402f100",
+        "size_in_bytes": 1931
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geocodio.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e1a3368d27b91c62c60c648e79191fffe5acf20620d84e3fed8d3250ae822983",
+        "sha256_in_prefix": "e1a3368d27b91c62c60c648e79191fffe5acf20620d84e3fed8d3250ae822983",
+        "size_in_bytes": 7549
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geokeo.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "102a1eb007c4e8e58dd0d04f90dbe48c297d25f212dcd23755b14004c3df0af6",
+        "sha256_in_prefix": "102a1eb007c4e8e58dd0d04f90dbe48c297d25f212dcd23755b14004c3df0af6",
+        "size_in_bytes": 6313
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geolake.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "49927abdf5c96187637f7142d762ee9ea39e6065532fb033e4dae3b5b30492d8",
+        "sha256_in_prefix": "49927abdf5c96187637f7142d762ee9ea39e6065532fb033e4dae3b5b30492d8",
+        "size_in_bytes": 5190
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/geonames.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "3c79a59c87ea62166109250f24c6a023878439bcf5fc3ace5a03de2b935996fd",
+        "sha256_in_prefix": "3c79a59c87ea62166109250f24c6a023878439bcf5fc3ace5a03de2b935996fd",
+        "size_in_bytes": 10695
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/google.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "647ca8f8da92317cd599cddd42aad496ddffbe6ff0931931fd3a6c467c20b7d2",
+        "sha256_in_prefix": "647ca8f8da92317cd599cddd42aad496ddffbe6ff0931931fd3a6c467c20b7d2",
+        "size_in_bytes": 13778
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/googlev3.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "04061595753fdd802604d9e7cf753223484343979376c9730ff11acd25c517bf",
+        "sha256_in_prefix": "04061595753fdd802604d9e7cf753223484343979376c9730ff11acd25c517bf",
+        "size_in_bytes": 438
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/here.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "eefbc2a644de0339265b4a3ae72c675383269a2bc65d276511ebac972bbcd810",
+        "sha256_in_prefix": "eefbc2a644de0339265b4a3ae72c675383269a2bc65d276511ebac972bbcd810",
+        "size_in_bytes": 20298
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/ignfrance.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "9d13bf416b09d8ee5a5f84c1b95bb862804766539a64db6d55ef8c824e6e7603",
+        "sha256_in_prefix": "9d13bf416b09d8ee5a5f84c1b95bb862804766539a64db6d55ef8c824e6e7603",
+        "size_in_bytes": 13512
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/mapbox.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e38efa196b8162ddc6f7cce90c64f3817cf4428932ffe8b25f4a89bfd11c533d",
+        "sha256_in_prefix": "e38efa196b8162ddc6f7cce90c64f3817cf4428932ffe8b25f4a89bfd11c533d",
+        "size_in_bytes": 7130
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/mapquest.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "685907ff237fbb68afb9037a42081034c22d8f55136aa574523afb0748d268e3",
+        "sha256_in_prefix": "685907ff237fbb68afb9037a42081034c22d8f55136aa574523afb0748d268e3",
+        "size_in_bytes": 6824
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/maptiler.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "8f1c83db5bd761378238a6aa5af43f9a9cdbfe2f529347c3c5607b86401a9df0",
+        "sha256_in_prefix": "8f1c83db5bd761378238a6aa5af43f9a9cdbfe2f529347c3c5607b86401a9df0",
+        "size_in_bytes": 6654
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/nominatim.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "b3298afcf2010d957399308a45983d0770d65616e6ab3033cc11e5807394f751",
+        "sha256_in_prefix": "b3298afcf2010d957399308a45983d0770d65616e6ab3033cc11e5807394f751",
+        "size_in_bytes": 12143
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/opencage.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "101a2342cabeea876e29c4a6535c020fb3277daaa58eb2fb5d45bd9097a40472",
+        "sha256_in_prefix": "101a2342cabeea876e29c4a6535c020fb3277daaa58eb2fb5d45bd9097a40472",
+        "size_in_bytes": 7647
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/openmapquest.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "932d6678beb1415248c78e2d3f1903b01b8466a37919193a6c9acc2b6fb7777e",
+        "sha256_in_prefix": "932d6678beb1415248c78e2d3f1903b01b8466a37919193a6c9acc2b6fb7777e",
+        "size_in_bytes": 2675
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/osm.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7644c5c9e79bdd5f17684eef5755ceaab038f8fd32331654ce3bcb6db149da7d",
+        "sha256_in_prefix": "7644c5c9e79bdd5f17684eef5755ceaab038f8fd32331654ce3bcb6db149da7d",
+        "size_in_bytes": 435
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/pelias.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "dc46cdc43a85d338a46801e466309660e64755d1be78c93dc62668b924a23383",
+        "sha256_in_prefix": "dc46cdc43a85d338a46801e466309660e64755d1be78c93dc62668b924a23383",
+        "size_in_bytes": 7626
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/photon.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b26a025a67c2f28d1579d8eb4c7dacbf4160bbdca08875cc534d0943787e848",
+        "sha256_in_prefix": "5b26a025a67c2f28d1579d8eb4c7dacbf4160bbdca08875cc534d0943787e848",
+        "size_in_bytes": 7954
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/pickpoint.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "f47364bdb5117ee9d741882d345f248c89ba00a56e27d3295960c1e244273a0d",
+        "sha256_in_prefix": "f47364bdb5117ee9d741882d345f248c89ba00a56e27d3295960c1e244273a0d",
+        "size_in_bytes": 2376
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/smartystreets.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2bf237984e39f345a82a592b3d2e7f02d505eb1fe4d66cfbc8913514c21a83b2",
+        "sha256_in_prefix": "2bf237984e39f345a82a592b3d2e7f02d505eb1fe4d66cfbc8913514c21a83b2",
+        "size_in_bytes": 4704
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/tomtom.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "33f37d3afd47cb2993e8f068b9aaea210f10a1c99c8aee690b69f8da571d7827",
+        "sha256_in_prefix": "33f37d3afd47cb2993e8f068b9aaea210f10a1c99c8aee690b69f8da571d7827",
+        "size_in_bytes": 7838
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/what3words.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7836d5d65bd885c976c3b2247dafefc4c1fc950c6dd59ba80866adc8b93ad971",
+        "sha256_in_prefix": "7836d5d65bd885c976c3b2247dafefc4c1fc950c6dd59ba80866adc8b93ad971",
+        "size_in_bytes": 11493
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/woosmap.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ffff39a1e18c975b7e2baa9ceb2d5d7ad26965a580f41e345aad5baa5ca5e1dc",
+        "sha256_in_prefix": "ffff39a1e18c975b7e2baa9ceb2d5d7ad26965a580f41e345aad5baa5ca5e1dc",
+        "size_in_bytes": 8865
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/__pycache__/yandex.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c86dfb961e1100f4ff98dddc73a817cd727bf6f7b291ac0b793b742ba74fb664",
+        "sha256_in_prefix": "c86dfb961e1100f4ff98dddc73a817cd727bf6f7b291ac0b793b742ba74fb664",
+        "size_in_bytes": 7198
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/arcgis.py",
+        "path_type": "hardlink",
+        "sha256": "fb93862778cee92a700ab47f2563f975dadbb143d25a6f2c1aa250874c4b7a62",
+        "sha256_in_prefix": "fb93862778cee92a700ab47f2563f975dadbb143d25a6f2c1aa250874c4b7a62",
+        "size_in_bytes": 12371
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/azure.py",
+        "path_type": "hardlink",
+        "sha256": "cf8197766d3e9ed73fe9be41fa0b36da58daecfc0f7bab8b9bba998de95057b6",
+        "sha256_in_prefix": "cf8197766d3e9ed73fe9be41fa0b36da58daecfc0f7bab8b9bba998de95057b6",
+        "size_in_bytes": 2254
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/baidu.py",
+        "path_type": "hardlink",
+        "sha256": "4c93dcf3a3a2b9141d76ceb2044c59e081414b571fea0ac16d227f082f07b530",
+        "sha256_in_prefix": "4c93dcf3a3a2b9141d76ceb2044c59e081414b571fea0ac16d227f082f07b530",
+        "size_in_bytes": 9266
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/banfrance.py",
+        "path_type": "hardlink",
+        "sha256": "660e89418d8e757ab7552bcfb9dcddc73bd648f65c75fe59b2e128639252ce83",
+        "sha256_in_prefix": "660e89418d8e757ab7552bcfb9dcddc73bd648f65c75fe59b2e128639252ce83",
+        "size_in_bytes": 5842
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/base.py",
+        "path_type": "hardlink",
+        "sha256": "84e534770de8a3d3ce64a546436b2d81df491f09f83144f8e02a1bd3cd82da52",
+        "sha256_in_prefix": "84e534770de8a3d3ce64a546436b2d81df491f09f83144f8e02a1bd3cd82da52",
+        "size_in_bytes": 17377
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/bing.py",
+        "path_type": "hardlink",
+        "sha256": "370ed5fbb131c1a3c126bea24e7a35b26311700513372ad8538588b3e7545b43",
+        "sha256_in_prefix": "370ed5fbb131c1a3c126bea24e7a35b26311700513372ad8538588b3e7545b43",
+        "size_in_bytes": 9371
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/databc.py",
+        "path_type": "hardlink",
+        "sha256": "8b4bc8f205f0c86e00e12d4bd943e91f11523c6eb14737284b1853febb87d21a",
+        "sha256_in_prefix": "8b4bc8f205f0c86e00e12d4bd943e91f11523c6eb14737284b1853febb87d21a",
+        "size_in_bytes": 5060
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/geocodeearth.py",
+        "path_type": "hardlink",
+        "sha256": "25ec43809588aba0aa57633b79fc4c3ae685a151a74c7ba1b5ceaab64d48a424",
+        "sha256_in_prefix": "25ec43809588aba0aa57633b79fc4c3ae685a151a74c7ba1b5ceaab64d48a424",
+        "size_in_bytes": 1826
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/geocodio.py",
+        "path_type": "hardlink",
+        "sha256": "b22a12c21b7264eae3b6afac9dbb2421ad3d38a991cf7cfae2877d47ff1e56c0",
+        "sha256_in_prefix": "b22a12c21b7264eae3b6afac9dbb2421ad3d38a991cf7cfae2877d47ff1e56c0",
+        "size_in_bytes": 8071
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/geokeo.py",
+        "path_type": "hardlink",
+        "sha256": "2f2632626d98d72b69628b5b6e86158a7336edfa4f9e0cefeb5b4772a387fcf4",
+        "sha256_in_prefix": "2f2632626d98d72b69628b5b6e86158a7336edfa4f9e0cefeb5b4772a387fcf4",
+        "size_in_bytes": 6826
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/geolake.py",
+        "path_type": "hardlink",
+        "sha256": "87182a18d04ca46179a8d68f341d2b87c4e21a27c9916dfea090d3120e9d60db",
+        "sha256_in_prefix": "87182a18d04ca46179a8d68f341d2b87c4e21a27c9916dfea090d3120e9d60db",
+        "size_in_bytes": 5570
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/geonames.py",
+        "path_type": "hardlink",
+        "sha256": "964383efdad191db50eb67585a74b75206907d6d3b9673dbc222b9d7c9f0179d",
+        "sha256_in_prefix": "964383efdad191db50eb67585a74b75206907d6d3b9673dbc222b9d7c9f0179d",
+        "size_in_bytes": 12643
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/google.py",
+        "path_type": "hardlink",
+        "sha256": "edda25e1788513ae478f760c2b963c9c445f785105f34ff371db2b28e5a8a2a6",
+        "sha256_in_prefix": "edda25e1788513ae478f760c2b963c9c445f785105f34ff371db2b28e5a8a2a6",
+        "size_in_bytes": 16448
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/googlev3.py",
+        "path_type": "hardlink",
+        "sha256": "451b0c2d036dbcdc0bdbf5678ea3665d3ccc910a651d110c9d033009cbcd6b52",
+        "sha256_in_prefix": "451b0c2d036dbcdc0bdbf5678ea3665d3ccc910a651d110c9d033009cbcd6b52",
+        "size_in_bytes": 294
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/here.py",
+        "path_type": "hardlink",
+        "sha256": "c786aec03a954d29f0374541db8a25f5d27ae7b4a11c1ef4ad42a77e9b43a4da",
+        "sha256_in_prefix": "c786aec03a954d29f0374541db8a25f5d27ae7b4a11c1ef4ad42a77e9b43a4da",
+        "size_in_bytes": 24012
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/ignfrance.py",
+        "path_type": "hardlink",
+        "sha256": "fb268fbff0ba1f175c5379ef95605964f247c0f04844b39ab5e6dfba9652f09d",
+        "sha256_in_prefix": "fb268fbff0ba1f175c5379ef95605964f247c0f04844b39ab5e6dfba9652f09d",
+        "size_in_bytes": 17082
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/mapbox.py",
+        "path_type": "hardlink",
+        "sha256": "78bf6e9c157b641a3af85f2f33963b365ac4c56805af2a4e9ba5c5c39c987d65",
+        "sha256_in_prefix": "78bf6e9c157b641a3af85f2f33963b365ac4c56805af2a4e9ba5c5c39c987d65",
+        "size_in_bytes": 7542
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/mapquest.py",
+        "path_type": "hardlink",
+        "sha256": "a617432488fdb742db9fed57fbe5e4c7953f6445188d4cc8e40e229b81a466ed",
+        "sha256_in_prefix": "a617432488fdb742db9fed57fbe5e4c7953f6445188d4cc8e40e229b81a466ed",
+        "size_in_bytes": 7092
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/maptiler.py",
+        "path_type": "hardlink",
+        "sha256": "22794b3e3afb677dfb24a7a6ee89cd4e56d5eb8056748e851dbe97335541aaf5",
+        "sha256_in_prefix": "22794b3e3afb677dfb24a7a6ee89cd4e56d5eb8056748e851dbe97335541aaf5",
+        "size_in_bytes": 7065
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/nominatim.py",
+        "path_type": "hardlink",
+        "sha256": "46b8a424272e5c3199211690dfd22b24a0d0dcb998112839754b860c23839f4f",
+        "sha256_in_prefix": "46b8a424272e5c3199211690dfd22b24a0d0dcb998112839754b860c23839f4f",
+        "size_in_bytes": 14233
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/opencage.py",
+        "path_type": "hardlink",
+        "sha256": "edc7e75787c53c035953864f496a52c0fe8b56a8665a48343ae7169465e9e935",
+        "sha256_in_prefix": "edc7e75787c53c035953864f496a52c0fe8b56a8665a48343ae7169465e9e935",
+        "size_in_bytes": 8081
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/openmapquest.py",
+        "path_type": "hardlink",
+        "sha256": "2b5f4487b8e93c9683827682bd315a20568abe4ca21140050d230442366f5f00",
+        "sha256_in_prefix": "2b5f4487b8e93c9683827682bd315a20568abe4ca21140050d230442366f5f00",
+        "size_in_bytes": 2561
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/osm.py",
+        "path_type": "hardlink",
+        "sha256": "f5560b2a2a44933399ce60befe61bdcf236bb061be75b87b3cdda9933d864646",
+        "sha256_in_prefix": "f5560b2a2a44933399ce60befe61bdcf236bb061be75b87b3cdda9933d864646",
+        "size_in_bytes": 297
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/pelias.py",
+        "path_type": "hardlink",
+        "sha256": "84cf721bc9c7ebb3eb7122811ddc4d6f6269e9942fdafc21b8e491b4ec31f8a9",
+        "sha256_in_prefix": "84cf721bc9c7ebb3eb7122811ddc4d6f6269e9942fdafc21b8e491b4ec31f8a9",
+        "size_in_bytes": 8565
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/photon.py",
+        "path_type": "hardlink",
+        "sha256": "7befeeead4156413ee2768759a45d84dacfbdbf0bf2e7e05e16cc0b89c61890c",
+        "sha256_in_prefix": "7befeeead4156413ee2768759a45d84dacfbdbf0bf2e7e05e16cc0b89c61890c",
+        "size_in_bytes": 8875
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/pickpoint.py",
+        "path_type": "hardlink",
+        "sha256": "9ce0db5b733bad84b124dafd6cd2325f6274cbe328cda1f14e3a8b83a3a5b183",
+        "sha256_in_prefix": "9ce0db5b733bad84b124dafd6cd2325f6274cbe328cda1f14e3a8b83a3a5b183",
+        "size_in_bytes": 2271
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/smartystreets.py",
+        "path_type": "hardlink",
+        "sha256": "4a8488f4333be43eac343c64b2ed3bb38f105aaa9a9a4740136e814f33110425",
+        "sha256_in_prefix": "4a8488f4333be43eac343c64b2ed3bb38f105aaa9a9a4740136e814f33110425",
+        "size_in_bytes": 4739
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/tomtom.py",
+        "path_type": "hardlink",
+        "sha256": "a0e06e35094e7a944db11ab70a5f08456685ecc9d0d3fafa24ccbd744539bd74",
+        "sha256_in_prefix": "a0e06e35094e7a944db11ab70a5f08456685ecc9d0d3fafa24ccbd744539bd74",
+        "size_in_bytes": 8205
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/what3words.py",
+        "path_type": "hardlink",
+        "sha256": "ca2f57d721ce26318b3b1d4db8922903582f002655d1c3e7f49b0bac9f6ff740",
+        "sha256_in_prefix": "ca2f57d721ce26318b3b1d4db8922903582f002655d1c3e7f49b0bac9f6ff740",
+        "size_in_bytes": 14384
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/woosmap.py",
+        "path_type": "hardlink",
+        "sha256": "cf445517ef15c48c514c51d4e1a9c9b5a0f532b8b7c63d176f36f2a37f5b1c7d",
+        "sha256_in_prefix": "cf445517ef15c48c514c51d4e1a9c9b5a0f532b8b7c63d176f36f2a37f5b1c7d",
+        "size_in_bytes": 9834
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/geocoders/yandex.py",
+        "path_type": "hardlink",
+        "sha256": "d61a9400452215305e769a2f69a355cfcf91d6a2a9a672b712917cedb8f608ec",
+        "sha256_in_prefix": "d61a9400452215305e769a2f69a355cfcf91d6a2a9a672b712917cedb8f608ec",
+        "size_in_bytes": 7304
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/location.py",
+        "path_type": "hardlink",
+        "sha256": "5f226bf49342e7a42d1cf93673cc8563ccbba886a5178214da871574cdd21c73",
+        "sha256_in_prefix": "5f226bf49342e7a42d1cf93673cc8563ccbba886a5178214da871574cdd21c73",
+        "size_in_bytes": 3546
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/point.py",
+        "path_type": "hardlink",
+        "sha256": "048fd3cefa2cc7e0d7e4c03e6cec9d72f27ee0c17665e438ab3c112c85b9f6f7",
+        "sha256_in_prefix": "048fd3cefa2cc7e0d7e4c03e6cec9d72f27ee0c17665e438ab3c112c85b9f6f7",
+        "size_in_bytes": 16718
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/timezone.py",
+        "path_type": "hardlink",
+        "sha256": "cf588bdbb2d284673b7271c9f299c296f1677901f29ebb79e968d0982aa88738",
+        "sha256_in_prefix": "cf588bdbb2d284673b7271c9f299c296f1677901f29ebb79e968d0982aa88738",
+        "size_in_bytes": 2469
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/units.py",
+        "path_type": "hardlink",
+        "sha256": "8d17c3a10c79d0be7826c00fd95e7029aa58727cec2b2571186d4bdc8e826d4d",
+        "sha256_in_prefix": "8d17c3a10c79d0be7826c00fd95e7029aa58727cec2b2571186d4bdc8e826d4d",
+        "size_in_bytes": 2950
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geopy/util.py",
+        "path_type": "hardlink",
+        "sha256": "8fdd2479ba3faaa72ffe390c7de02536c6f50674531dbd98f063abaf45651875",
+        "sha256_in_prefix": "8fdd2479ba3faaa72ffe390c7de02536c6f50674531dbd98f063abaf45651875",
+        "size_in_bytes": 526
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "geopy",
+  "sha256": "e917cd94689fb5cc644928fecedd55745704eb34d888d816673f4fe3845072cc",
+  "size": 172472,
+  "subdir": "linux-64",
+  "timestamp": 1718112276000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/geopy-2.4.1-py310h06a4308_0.conda",
+  "version": "2.4.1"
+}

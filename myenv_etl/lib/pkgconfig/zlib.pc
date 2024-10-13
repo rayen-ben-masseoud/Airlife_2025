@@ -1,0 +1,13 @@
+prefix=/home/n_amdouni/ETL/Airlife_2025/myenv_etl
+exec_prefix=/home/n_amdouni/ETL/Airlife_2025/myenv_etl
+libdir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/lib
+sharedlibdir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/lib
+includedir=/home/n_amdouni/ETL/Airlife_2025/myenv_etl/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

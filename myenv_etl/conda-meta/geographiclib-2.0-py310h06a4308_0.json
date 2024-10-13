@@ -1,0 +1,273 @@
+{
+  "build": "py310h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "/home/n_amdouni/anaconda3/pkgs/geographiclib-2.0-py310h06a4308_0",
+  "files": [
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/LICENSE",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/METADATA",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/RECORD",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/WHEEL",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/geographiclib-2.0.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/geographiclib/__init__.py",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/accumulator.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/constants.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/geodesic.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/geodesiccapability.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/geodesicline.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/geomath.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/__pycache__/polygonarea.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/accumulator.py",
+    "lib/python3.10/site-packages/geographiclib/constants.py",
+    "lib/python3.10/site-packages/geographiclib/geodesic.py",
+    "lib/python3.10/site-packages/geographiclib/geodesiccapability.py",
+    "lib/python3.10/site-packages/geographiclib/geodesicline.py",
+    "lib/python3.10/site-packages/geographiclib/geomath.py",
+    "lib/python3.10/site-packages/geographiclib/polygonarea.py",
+    "lib/python3.10/site-packages/geographiclib/test/__init__.py",
+    "lib/python3.10/site-packages/geographiclib/test/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/test/__pycache__/test_geodesic.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/test/__pycache__/test_sign.cpython-310.pyc",
+    "lib/python3.10/site-packages/geographiclib/test/test_geodesic.py",
+    "lib/python3.10/site-packages/geographiclib/test/test_sign.py"
+  ],
+  "fn": "geographiclib-2.0-py310h06a4308_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/n_amdouni/anaconda3/pkgs/geographiclib-2.0-py310h06a4308_0",
+    "type": 1
+  },
+  "md5": "8ce9aa9f3eaf7e867a22e72d14e87ae0",
+  "name": "geographiclib",
+  "package_tarball_full_path": "/home/n_amdouni/anaconda3/pkgs/geographiclib-2.0-py310h06a4308_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "cf5eba0929dfb36bb05982d81cf2cc24029fde35c670bf3b82db3c902ef8f367",
+        "sha256_in_prefix": "cf5eba0929dfb36bb05982d81cf2cc24029fde35c670bf3b82db3c902ef8f367",
+        "size_in_bytes": 1089
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "b4e782d24b0714f1836ab752bfb89d94d4a0a160bff25958a2a362c9e54ccc5c",
+        "sha256_in_prefix": "b4e782d24b0714f1836ab752bfb89d94d4a0a160bff25958a2a362c9e54ccc5c",
+        "size_in_bytes": 1365
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "c5c116538f76c8a1c84b6748dee3d34a3568cb6678856fb76900274b247602c6",
+        "sha256_in_prefix": "c5c116538f76c8a1c84b6748dee3d34a3568cb6678856fb76900274b247602c6",
+        "size_in_bytes": 2285
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "sha256_in_prefix": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "f8c5dd93e8ec5e47b5021e71d9471c66506c2abb7fd72610754bf76afcdbf010",
+        "sha256_in_prefix": "f8c5dd93e8ec5e47b5021e71d9471c66506c2abb7fd72610754bf76afcdbf010",
+        "size_in_bytes": 73
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib-2.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "94739beccf039b4efc153ec551ace2a08837d5a3fd8d4bcd0d441c5c51cc9659",
+        "sha256_in_prefix": "94739beccf039b4efc153ec551ace2a08837d5a3fd8d4bcd0d441c5c51cc9659",
+        "size_in_bytes": 14
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "260684954abf1ecf954173247c17a26ada5813f3da644518448ddddcd20a034c",
+        "sha256_in_prefix": "260684954abf1ecf954173247c17a26ada5813f3da644518448ddddcd20a034c",
+        "size_in_bytes": 294
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "de6851c3740c053945ac4e2d3c6a30d1f7ef7fbea5ce7a559145410a588358ce",
+        "sha256_in_prefix": "de6851c3740c053945ac4e2d3c6a30d1f7ef7fbea5ce7a559145410a588358ce",
+        "size_in_bytes": 321
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/accumulator.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "8087b29fc4ed7ea82d12048497c5c244bb05b687af11ae70a96d35eae53c5ce0",
+        "sha256_in_prefix": "8087b29fc4ed7ea82d12048497c5c244bb05b687af11ae70a96d35eae53c5ce0",
+        "size_in_bytes": 1726
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/constants.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "6bf95219fba45941dc10c532113ed0af77e012ae43a31caa7eee262fa403c9db",
+        "sha256_in_prefix": "6bf95219fba45941dc10c532113ed0af77e012ae43a31caa7eee262fa403c9db",
+        "size_in_bytes": 455
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/geodesic.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "b6e827a6b0747fd8060cce09aa07165cf08b5b0b1a0e8bde3bed50f9aff7881f",
+        "sha256_in_prefix": "b6e827a6b0747fd8060cce09aa07165cf08b5b0b1a0e8bde3bed50f9aff7881f",
+        "size_in_bytes": 26309
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/geodesiccapability.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "fbe6c9b57cdcd9d5af838775e9332e912d451115443ef7e5cfd9e2d04bf8cb78",
+        "sha256_in_prefix": "fbe6c9b57cdcd9d5af838775e9332e912d451115443ef7e5cfd9e2d04bf8cb78",
+        "size_in_bytes": 976
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/geodesicline.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "63c8dd6c737eef13e742ae9162e9bbe4084bc309def454d68ae0ca462453c9ff",
+        "sha256_in_prefix": "63c8dd6c737eef13e742ae9162e9bbe4084bc309def454d68ae0ca462453c9ff",
+        "size_in_bytes": 10139
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/geomath.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "b49849f8e3dfe4037dbf1345d6fd7e48c683a009e60df6027f098bef98b4e429",
+        "sha256_in_prefix": "b49849f8e3dfe4037dbf1345d6fd7e48c683a009e60df6027f098bef98b4e429",
+        "size_in_bytes": 4259
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/__pycache__/polygonarea.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "02d3593d2dc77d602685634a73f7f408da6d65bace5eeec48c1381e28b4af2de",
+        "sha256_in_prefix": "02d3593d2dc77d602685634a73f7f408da6d65bace5eeec48c1381e28b4af2de",
+        "size_in_bytes": 9402
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/accumulator.py",
+        "path_type": "hardlink",
+        "sha256": "5f8fc9929e8ed40a1ce2cb39725a5555c99f2a14bdc6032f62c6743e49857bf2",
+        "sha256_in_prefix": "5f8fc9929e8ed40a1ce2cb39725a5555c99f2a14bdc6032f62c6743e49857bf2",
+        "size_in_bytes": 3159
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/constants.py",
+        "path_type": "hardlink",
+        "sha256": "e94e4217b48564add6a8d852b6048c55428c33aed0c48f992e8125483e8f23f2",
+        "sha256_in_prefix": "e94e4217b48564add6a8d852b6048c55428c33aed0c48f992e8125483e8f23f2",
+        "size_in_bytes": 779
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/geodesic.py",
+        "path_type": "hardlink",
+        "sha256": "cf80277a838f3c35938cf02268a766f58d7dfb1058618e22b250fbffa8d2d72b",
+        "sha256_in_prefix": "cf80277a838f3c35938cf02268a766f58d7dfb1058618e22b250fbffa8d2d72b",
+        "size_in_bytes": 50369
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/geodesiccapability.py",
+        "path_type": "hardlink",
+        "sha256": "abd33a75b2c9c81af568f556f6bc6099709410168b42a6abd023c6ff30038ceb",
+        "sha256_in_prefix": "abd33a75b2c9c81af568f556f6bc6099709410168b42a6abd023c6ff30038ceb",
+        "size_in_bytes": 1398
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/geodesicline.py",
+        "path_type": "hardlink",
+        "sha256": "5f74a50a9196ef48bebc74b5132db70b5a9db8ee92660f3cd1d79c1dd9018c01",
+        "sha256_in_prefix": "5f74a50a9196ef48bebc74b5132db70b5a9db8ee92660f3cd1d79c1dd9018c01",
+        "size_in_bytes": 18408
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/geomath.py",
+        "path_type": "hardlink",
+        "sha256": "02c89fb17df8e70e946d1947f4aebe21eaf296d03508baa298fcb3a1e9c59c47",
+        "sha256_in_prefix": "02c89fb17df8e70e946d1947f4aebe21eaf296d03508baa298fcb3a1e9c59c47",
+        "size_in_bytes": 4592
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/polygonarea.py",
+        "path_type": "hardlink",
+        "sha256": "67d4036c6048d9c80d7cd2b3a3a8eb38eb8e16e7bb2b6ebb280c63254910a55a",
+        "sha256_in_prefix": "67d4036c6048d9c80d7cd2b3a3a8eb38eb8e16e7bb2b6ebb280c63254910a55a",
+        "size_in_bytes": 12003
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/test/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b14b9dd8fa25c6b7b7d889d89d1d40dd2f688d6eed6aada9a6b9a4e5c7780e4f",
+        "sha256_in_prefix": "b14b9dd8fa25c6b7b7d889d89d1d40dd2f688d6eed6aada9a6b9a4e5c7780e4f",
+        "size_in_bytes": 269
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/test/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1aa5fe00c9e53f0966f9858dd8de6d16433df08850f58eb938b3a3f6649b8b94",
+        "sha256_in_prefix": "1aa5fe00c9e53f0966f9858dd8de6d16433df08850f58eb938b3a3f6649b8b94",
+        "size_in_bytes": 429
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/test/__pycache__/test_geodesic.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "17fcb8c7a1881415573e196142e5bfb3b8dcdb6c4a9997b1f38d0110bb844abc",
+        "sha256_in_prefix": "17fcb8c7a1881415573e196142e5bfb3b8dcdb6c4a9997b1f38d0110bb844abc",
+        "size_in_bytes": 28405
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/test/__pycache__/test_sign.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "23095322f174a064dc49d52380934cf3b4ccab94827b6cdf6d7abe3dd7bbe952",
+        "sha256_in_prefix": "23095322f174a064dc49d52380934cf3b4ccab94827b6cdf6d7abe3dd7bbe952",
+        "size_in_bytes": 10174
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/test/test_geodesic.py",
+        "path_type": "hardlink",
+        "sha256": "1cef228af143b9f148145d19ab9e5b650861d3778563cda98c8f2a26403f9b58",
+        "sha256_in_prefix": "1cef228af143b9f148145d19ab9e5b650861d3778563cda98c8f2a26403f9b58",
+        "size_in_bytes": 40723
+      },
+      {
+        "_path": "lib/python3.10/site-packages/geographiclib/test/test_sign.py",
+        "path_type": "hardlink",
+        "sha256": "64c14412a6d9fea7eb6cfcc2bd0485f25fc266931198ce5e84938aed6cf7c137",
+        "sha256_in_prefix": "64c14412a6d9fea7eb6cfcc2bd0485f25fc266931198ce5e84938aed6cf7c137",
+        "size_in_bytes": 13683
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "557f30a6080c539386022fbd7126d8f77393f52a63d4ff47472caf33661646ae",
+  "size": 70443,
+  "subdir": "linux-64",
+  "timestamp": 1683807345000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/geographiclib-2.0-py310h06a4308_0.conda",
+  "version": "2.0"
+}

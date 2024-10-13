@@ -5,8 +5,8 @@ from sqlalchemy import create_engine
 def load_data_to_postgres(df, table_name):
     try:
         # Replace with your actual credentials
-        db_user = "david_cardo"
-        db_password = "CarGom57"
+        db_user = "noura_post"
+        db_password = "noura"
         db_host = "localhost"
         db_port = "5432"
         db_name = "airlife_db"
