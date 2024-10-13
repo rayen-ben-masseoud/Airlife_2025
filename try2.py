@@ -196,7 +196,7 @@ if __name__ == "__main__":
         while True:
             run_etl()
             update_aircraft_metrics(session)
-            time.sleep(60)  # Sleep for 80 seconds
+            time.sleep(60)  # Sleep for 60 seconds
     except KeyboardInterrupt:
         print("Process interrupted. Exiting...")
     finally:
