@@ -16,10 +16,3 @@ def get_request_with_retries(url):
 
 def log_message(message):
     logging.info(message)
-
-
-if __name__ == "__main__":
-    # Example usage of utility functions
-    url = "https://opensky-network.org/api/states/all"
-    response = get_request_with_retries(url)
-    log_message(f"Request to {url} completed with status code {response.status_code}")
