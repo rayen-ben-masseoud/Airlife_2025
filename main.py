@@ -1,4 +1,3 @@
-if __name__ == "__main__":
 import subprocess
 import sys
 import logging
