@@ -1,9 +1,10 @@
 pandas
 requests
-psycopg2
+psycopg2-binary
 SQLAlchemy
 tenacity
 pytest
 datetime
 sys
 os
+
