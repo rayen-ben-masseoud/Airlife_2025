@@ -1,0 +1,9 @@
+pandas
+requests
+psycopg2
+SQLAlchemy
+tenacity
+pytest
+datetime
+sys
+os

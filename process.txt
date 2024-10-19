@@ -1,0 +1,30 @@
+perfecto, ya tengo todas las listas en postgresql y ahora debo hacer el procesado de datos para la creación de un dashboard. 
+
+Ahora mismo en postgre tengo 6 tablas. airports, airlines, routes y planes provenientes de openflights, y flights y historic_flights_aircraft provenientes de opensky. Quiero cruzar datos entre todas estas tablas para crear un dashboard. Dicho dashboard tendra las siguientes columnas:
+
+- Plane icao24
+- Plane name
+- Plane callsign
+- Airline name
+- Airline icao24
+- Airline country
+- Airline active
+- Airline callsign
+- Departure airport name
+- Departure airport icao
+- Departure airport city
+- Arrival airport name
+- Arrival airport icao
+- Arrival airport city
+- firstSeen
+- lastSeen
+- codeshare
+- stops
+- equipment
+
+Para hacer el cruce de datos, partimos de la columna icao24 en historic_flights_aircraft y lo cruzamos en primer lugar con el icao24 en planes para obtener el nombre del avion. 
+Seguidamente hay que coger estDepartureAirport y estArrivalAirport de historic_flights_aircraft (siempre que flight_completed sea True) y cruzar con la tabla routes para comprobar si hay alguna ruta que tenga los mismos aeropuertos de origen y destino que los extraidos. Si encontramos una coincidencia nos quedamos con el icao de la aerolinia, el codeshare de la ruta, los stops de la ruta y el equipment de la ruta. Cruzamos el icao de la aerolinea con la airline table para obtener el nombre de la aerlonia, su callsign, su pais y si esta o no active. Finalmente, con los aeropuertos de origen y destino cruzamos sus icaos con airports table para obtener sus nombres, ciudades y paises. lastSeen y firstSeen estan en historic_flights_aircraft. Si flight_completed en historic_flights_aircraft es False, significa que el vuelo aun esta en el aire y, por lo tanto, todo lo que este relacionado con arrival sera none.
+
+En resumen, cada vuelo va a representar una fila del dashboard.
+
+
