@@ -3,10 +3,10 @@ import pandas as pd
 
 def clean_airport_data(airports_df):
     # Remove rows with missing latitude or longitude
-    airports_df = airports_df.dropna(subset=['latitude', 'longitude'])
+    airports_df = airports_df.dropna(subset=['Latitude', 'Longitude'])
     # Convert latitude and longitude to float
-    airports_df['latitude'] = airports_df['latitude'].astype(float)
-    airports_df['longitude'] = airports_df['longitude'].astype(float)
+    airports_df['Latitude'] = airports_df['Latitude'].astype(float)
+    airports_df['Longitude'] = airports_df['Longitude'].astype(float)
     return airports_df
 
 def enrich_flight_data(flights_df):
