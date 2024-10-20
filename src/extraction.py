@@ -34,11 +34,11 @@ def extract_live_flight_data():
         flights_df['time_position'] = pd.to_datetime(flights_df['time_position'], unit='s')
         flights_df['last_contact'] = pd.to_numeric(flights_df['last_contact'], errors='coerce')
         flights_df['last_contact'] = pd.to_datetime(flights_df['last_contact'], unit='s')
-
+        
         return flights_df
     else:
         raise Exception(f"Error fetching data: {response.status_code}")
-    
+
 # Converts a date to Unix date format
 def date_to_timestamp(date):
     dt = datetime.strptime(date, "%Y-%m-%d %H:%M:%S") # example: "2024-10-19 12:00:00". Last 30 days max
@@ -73,12 +73,18 @@ def extract_historic_aircraft_data(icao, begin, end):
     historic_flights_df = historic_flights_df.dropna(subset=['estDepartureAirport'])
 
     return historic_flights_df
-    
+
 
 if __name__ == "__main__":
     begin = "2024-10-13 12:00:00"
     end = "2024-10-19 12:00:00" # 7 days max time span to request from current time
     # icao = "a2b47e" # This corresponds to a Delta Air Lines aircraft (a Boeing 737)
     icao = "3c675a"
+    # 3c675a;2024-10-13 12:00:00
+    
+    airports = extract_openflights_data()
+    print(airports.head())
+    flights = extract_live_flight_data()
+    print(flights.head())
     historic_aircraft_flights_df = extract_historic_aircraft_data(icao, date_to_timestamp(begin), date_to_timestamp(end))
-    # ab1644;2024-10-18 12:00:00
+    print(historic_aircraft_flights_df.head())
