@@ -1,4 +1,19 @@
 # Airlife_2025
+-Create an evironment in your local depository (instead of myen_etl):
+# Navigate to your desired folder
+cd /path/to/your/current/folder
+
+# Create a new environment in the current folder
+conda create --prefix ./myenv python=3.9
+
+# Activate the environment
+conda activate ./myenv
+
+# Install packages from the requirements file
+pip install -r requirements.txt
+
+
+
 --change #database credentials (starting from line 12 in update_metrics.py) and in (src_aircraft/loading_aircraft.py starting from line 7 ) 
 
 -This demo is not fully automated but computes the cumulative distance from the time we launch the update_metrics.py until we kill it:
