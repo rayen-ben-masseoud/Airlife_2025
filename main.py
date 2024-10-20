@@ -8,7 +8,7 @@ from src.utils import log_message
 
 def run_etl():
     # Input
-    entry = input("\n\n\nIntroduce the aircraft's ICAO (hexadecimal code) and the start date (format: ICAO;YYYY-MM-DD hh:mm:ss):\n IMPORTANT: To comply with OpenSky access policies, the start date must not be more than 7 DAYS from the current time!!: ")
+    entry = input("\n\n\nIntroduce the aircraft's ICAO (hexadecimal code) and the start date (format: ICAO;YYYY-MM-DD hh:mm:ss):\n IMPORTANT: To comply with OpenSky access policies, the start date must not be more than 30 DAYS from the current time!!: ")
     parts = entry.split(';')
 
     def validate_date(date_str):
@@ -31,8 +31,8 @@ def run_etl():
         if begin is not None and end is not None:
             if end < begin:
                 print("Error: Start date cannot be in the future.")
-            if abs(datetime.strptime(end, "%Y-%m-%d %H:%M:%S")-datetime.strptime(begin, "%Y-%m-%d %H:%M:%S")) > timedelta(days=7):
-                print("Error: Start date is more than 7 days from the current time (now).")
+            if abs(datetime.strptime(end, "%Y-%m-%d %H:%M:%S")-datetime.strptime(begin, "%Y-%m-%d %H:%M:%S")) > timedelta(days=30):
+                print(f"Error: Start date is more than 30 days from the current time ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')}).")
 
     # Extraction
     log_message("Starting extraction phase.")
