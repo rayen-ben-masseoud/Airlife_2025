@@ -6,7 +6,7 @@ On the terminal execute the following commands:
 
 --1) sudo su -l postgres  
 
---2)psql -h localhost -p 5432 -U noura_post -d postgres # change your credentials as mentioned above
+--2)psql -h localhost -p 5432 -U "user_name" -d postgres # change your credentials as mentioned above
 
 --3)CREATE DATABASE aircraft_db;
 
