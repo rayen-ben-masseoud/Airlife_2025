@@ -28,6 +28,13 @@ def extract_live_flight_data():
                    'baro_altitude', 'on_ground', 'velocity', 'true_track', 'vertical_rate', 'sensors', 'geo_altitude',
                    'squawk', 'spi', 'position_source']
         flights_df = pd.DataFrame(response.json()['states'], columns=columns)
+
+        # Convert last and first seen to date format
+        flights_df['time_position'] = pd.to_numeric(flights_df['time_position'], errors='coerce')
+        flights_df['time_position'] = pd.to_datetime(flights_df['time_position'], unit='s')
+        flights_df['last_contact'] = pd.to_numeric(flights_df['last_contact'], errors='coerce')
+        flights_df['last_contact'] = pd.to_datetime(flights_df['last_contact'], unit='s')
+
         return flights_df
     else:
         raise Exception(f"Error fetching data: {response.status_code}")
@@ -44,22 +51,27 @@ def timestamp_to_date(timestamp):
 def extract_historic_aircraft_data(icao, begin, end):
     api = OpenSkyApi("allonch", "airlife2025")
     raw_data = api.get_flights_by_aircraft(icao, begin, end)
-    data = [list(f.keys) for f in raw_data]
-    columns = ['icao24', 'first_seen', 'est_departure_airport', 'last_seen', 'est_arrival_airport', 
-                'callsign', 'est_departure_airport_horiz_distance', 'est_departure_airport_vert_distance', 
-                'est_arrival_airport_horiz_distance', 'est_arrival_airport_vert_distance', 
-                'departure_airport_candidates_count', 'arrival_airport_candidates_count']
-    historic_flights_df = pd.DataFrame(data, columns=columns)
+    data = []
+    for elem in raw_data:
+        d = {}
+        for key in list(elem.keys):
+            d[key] = getattr(elem, key)
+        data.append(d)
+    
+    historic_flights_df = pd.DataFrame(data)
 
     # Convert last and first seen to date format
-    historic_flights_df['first_seen'] = pd.to_numeric(historic_flights_df['first_seen'], errors='coerce')
-    historic_flights_df['first_seen'] = pd.to_datetime(historic_flights_df['first_seen'], unit='s')
-    historic_flights_df['last_seen'] = pd.to_numeric(historic_flights_df['last_seen'], errors='coerce')
-    historic_flights_df['last_seen'] = pd.to_datetime(historic_flights_df['last_seen'], unit='s')
+    historic_flights_df['firstSeen'] = pd.to_numeric(historic_flights_df['firstSeen'], errors='coerce')
+    historic_flights_df['firstSeen'] = pd.to_datetime(historic_flights_df['firstSeen'], unit='s')
+    historic_flights_df['lastSeen'] = pd.to_numeric(historic_flights_df['lastSeen'], errors='coerce')
+    historic_flights_df['lastSeen'] = pd.to_datetime(historic_flights_df['lastSeen'], unit='s')
 
     # If there is no estimated arrival airport, the flight might be still in the air
-    historic_flights_df['on_ground'] = historic_flights_df['est_arrival_airport'].notna()
-    
+    historic_flights_df['on_ground'] = historic_flights_df['estArrivalAirport'].notna()
+
+    # Eliminate flights that did not take place
+    historic_flights_df = historic_flights_df.dropna(subset=['estDepartureAirport'])
+
     return historic_flights_df
     
 
@@ -69,4 +81,4 @@ if __name__ == "__main__":
     # icao = "a2b47e" # This corresponds to a Delta Air Lines aircraft (a Boeing 737)
     icao = "3c675a"
     historic_aircraft_flights_df = extract_historic_aircraft_data(icao, date_to_timestamp(begin), date_to_timestamp(end))
-    # 3c675a;2024-10-13 12:00:00
+    # ab1644;2024-10-18 12:00:00

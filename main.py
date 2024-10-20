@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from src.dashboard import flights_dashboard
+from src.dashboard import generate_flights_dashboard
 from src.extraction import date_to_timestamp, extract_historic_aircraft_data, extract_openflights_data, extract_live_flight_data
 from src.transformation import clean_airport_data, enrich_flight_data
 from src.loading import load_data_to_postgres
@@ -54,7 +54,7 @@ def run_etl():
 
     # Dashboard
     log_message("Generating dashboard.")
-    flights_dashboard = flights_dashboard(icao)
+    flights_dashboard = generate_flights_dashboard(icao)
     load_data_to_postgres(flights_dashboard, f"flights_of_aircraft_{icao}")
     print(flights_dashboard)
 
