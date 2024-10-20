@@ -9,7 +9,6 @@ def clean_airport_data(airports_df):
     airports_df['Longitude'] = airports_df['Longitude'].astype(float)
     return airports_df
 
-
 def enrich_flight_data(flights_df):
     # Filter out rows where the plane is on the ground
     flights_df = flights_df[flights_df['on_ground'] == False]

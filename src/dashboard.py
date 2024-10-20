@@ -19,7 +19,6 @@ def generate_flights_dashboard(icao24_code):
         query = """
         SELECT 
             h.icao24 AS plane_icao24,
-            p.name AS plane_name,
             h.callsign,
             h.on_ground,
             d.icao AS departure_airport_icao,
@@ -57,8 +56,8 @@ def generate_flights_dashboard(icao24_code):
                 WHEN h.on_ground THEN ar.altitude
                 ELSE NULL
             END AS arrival_airport_altitude,
-            h.first_seen,
-            h.last_seen,
+            h."firstSeen",
+            h."lastSeen",
 
             CASE 
                 WHEN NOT h.on_ground THEN f.longitude
@@ -93,15 +92,13 @@ def generate_flights_dashboard(icao24_code):
         FROM
             historic_flights_aircraft h
         JOIN 
-            planes p ON h.icao24 = p.icao
-        JOIN 
-            airports d ON h.est_departure_airport = d.icao
+            airports d ON h."estDepartureAirport" = d.icao
         LEFT JOIN 
-            airports ar ON h.est_arrival_airport = ar.icao
+            airports ar ON h."estArrivalAirport" = ar.icao
         LEFT JOIN 
             flights f ON h.icao24 = f.icao24
         ORDER BY 
-            h.last_seen DESC;
+            h."lastSeen" DESC;
         """
 
         # Ejecutar la consulta
