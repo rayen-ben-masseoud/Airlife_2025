@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 from src.extraction import date_to_timestamp, extract_historic_aircraft_data, extract_openflights_data, extract_live_flight_data
 from src.transformation import clean_airport_data, enrich_flight_data
 from src.loading import load_data_to_postgres
-from src.dashboard import flights_dashboard
+from src.dashboard import generate_flights_dashboard
 from src.utils import log_message
 
 logging.basicConfig(level=logging.INFO)
@@ -187,7 +187,7 @@ def run_etl():
 
     # Dashboard
     log_message("Generating dashboard.")
-    flights_dashboard = flights_dashboard(icao)
+    flights_dashboard = generate_flights_dashboard(icao)
     load_data_to_postgres(flights_dashboard, f"flights_of_aircraft_{icao}")
     print(flights_dashboard)
 
