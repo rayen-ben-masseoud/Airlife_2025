@@ -1,21 +1,24 @@
 # Airlife_2025
 -Create an evironment in your local depository (instead of myen_etl):
-# Navigate to your desired folder
+
+Navigate to your desired folder
 cd /path/to/your/current/folder
 
-# Create a new environment in the current folder
+
+Create a new environment in the current folder
 conda create --prefix ./myenv python=3.9
 
-# Activate the environment
+Activate the environment
 conda activate ./myenv
 
-# Install packages from the requirements file
+Install packages from the requirements file
 pip install -r requirements.txt
 
 
-
+### change database credentials
 --change #database credentials (starting from line 12 in update_metrics.py) and in (src_aircraft/loading_aircraft.py starting from line 7 ) 
 
+### create manually the database aircraft_db
 -This demo is not fully automated but computes the cumulative distance from the time we launch the update_metrics.py until we kill it:
 On the terminal execute the following commands:
 
@@ -25,6 +28,8 @@ On the terminal execute the following commands:
 
 --3)CREATE DATABASE aircraft_db;
 
+### run the update_metrics.py
+
 --4)run update_metrics.py
 
 
@@ -33,6 +38,7 @@ On the terminal execute the following commands:
 
 --the code will automatically redownload the data until you stop it in the shell command.
 
+### use pgadmin4 or postgresql
 --5)Visualize the sql tables using pgadmin4 or using queries in postgresql
 
 
