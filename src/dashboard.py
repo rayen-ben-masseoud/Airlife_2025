@@ -5,17 +5,17 @@ def generate_flights_dashboard(icao24_code):
     # Connect to the PostgreSQL database
     conn = psycopg2.connect(
         dbname="airlife_db",
-        user="",
-        password="",
+        user="allonch",
+        password="Allonchmajo00%",
         host="localhost",
         port="5432"
     )
     
     try:
-        # Crear un cursor para ejecutar la consulta
+        # Create a cursor to execute the query
         cursor = conn.cursor()
         
-        # Consulta SQL para obtener la información del dashboard
+        # SQL query to retrieve dashboard information
         query = """
         SELECT 
             h.icao24 AS plane_icao24,
@@ -101,31 +101,35 @@ def generate_flights_dashboard(icao24_code):
             h."lastSeen" DESC;
         """
 
-        # Ejecutar la consulta
+        # Execute the query
         cursor.execute(query, (icao24_code,))
         
-        # Recuperar los resultados
+        # Retrieve the results
         results = cursor.fetchall()
         
-        # Convertir los resultados a un DataFrame de pandas
+        # Convert the results into a pandas DataFrame
         columns = [
-            'Aircraft ICAO24', 'Aircraft Name', 'Aircraft Callsign', 'On_ground', 'Departure Airport ICAO', 'Departure Airport Name', 
-            'Departure Airport City', 'Departure Airport Country', 'Arrival Airport ICAO',
-            'Arrival Airport Name', 'Arrival City', 
-            'Arrival Airport Country', 'first_seen', 'last_seen', 'longitude', 'latitude', 'baro_altitude', 'velocity', 'vertical_rate', 'is_high_altitude'
+            'plane_icao24', 'callsign', 'on_ground', 'departure_airport_icao', 'departure_airport_name', 'departure_airport_city', 'departure_airport_country',
+            'departure_airport_longitude', 'departure_airport_latitude', 'departure_airport_altitude',
+            'arrival_airport_icao', 'arrival_airport_name', 'arrival_airport_city', 'arrival_airport_country', 'arrival_airport_longitude', 'arrival_airport_latitude', 'arrival_airport_altitude'
+            'firstSeen', 'lastSeen', 'longitude', 'latitude', 'baro_altitude', 'velocity', 'vertical_rate', 'is_high_altitude'
         ]
-        flight_dashboard = pd.DataFrame(results, columns=columns)
+        data = []
+        for elem in range(len(results)):
+            d = {}
+            i = 0
+            for key in columns:
+                d[key] = results[elem][i]
+                i = i + 1
+            data.append(d)
+
+        flight_dashboard = pd.DataFrame(data)
 
         return flight_dashboard
 
     except Exception as e:
         print(f"Error: {e}")
     finally:
-        # Cerrar la conexión
+        # Close the connection
         cursor.close()
         conn.close()
-
-# Uso de la función
-# icao24_code = 'A0C7D4'  # Reemplaza con el ICAO24 que deseas consultar
-# dashboard_df = fetch_flight_dashboard(icao24_code)
-# print(dashboard_df)
