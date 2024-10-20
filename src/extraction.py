@@ -28,6 +28,13 @@ def extract_live_flight_data():
                    'baro_altitude', 'on_ground', 'velocity', 'true_track', 'vertical_rate', 'sensors', 'geo_altitude',
                    'squawk', 'spi', 'position_source']
         flights_df = pd.DataFrame(response.json()['states'], columns=columns)
+
+        # Convert last and first seen to date format
+        flights_df['time_position'] = pd.to_numeric(flights_df['time_position'], errors='coerce')
+        flights_df['time_position'] = pd.to_datetime(flights_df['time_position'], unit='s')
+        flights_df['last_contact'] = pd.to_numeric(flights_df['last_contact'], errors='coerce')
+        flights_df['last_contact'] = pd.to_datetime(flights_df['last_contact'], unit='s')
+        
         return flights_df
     else:
         raise Exception(f"Error fetching data: {response.status_code}")
