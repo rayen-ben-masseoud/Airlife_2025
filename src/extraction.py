@@ -34,7 +34,7 @@ def extract_live_flight_data():
 
 # Converts a date to Unix date format
 def date_to_timestamp(date):
-    dt = datetime.strptime(date, "%Y-%m-%d %H:%M:%S") # example: "2024-10-19 12:00:00". Last 7 days max
+    dt = datetime.strptime(date, "%Y-%m-%d %H:%M:%S") # example: "2024-10-19 12:00:00". Last 30 days max
     timestamp = int(dt.timestamp())
     return timestamp
 
