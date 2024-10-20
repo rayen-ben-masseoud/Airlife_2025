@@ -1,7 +1,7 @@
 import psycopg2
 import pandas as pd
 
-def flights_dashboard(icao24_code):
+def generate_flights_dashboard(icao24_code):
     # Connect to the PostgreSQL database
     conn = psycopg2.connect(
         dbname="airlife_db",
